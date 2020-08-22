@@ -47,6 +47,14 @@ echo "  https://extensions.gnome.org/extension/15/alternatetab/"
 echo "  https://extensions.gnome.org/extension/6/applications-menu/"
 echo "  https://extensions.gnome.org/extension/779/clipboard-indicator/"
 echo "  https://extensions.gnome.org/extension/8/places-status-indicator/"
+echo "  https://extensions.gnome.org/extension/2/move-clock/"
+echo "  https://extensions.gnome.org/extension/800/remove-dropdown-arrows/"
+echo "  https://extensions.gnome.org/extension/657/shelltile/"
+echo "  https://extensions.gnome.org/extension/1112/screenshot-tool/"
+echo "  https://extensions.gnome.org/extension/906/sound-output-device-chooser/"
+echo "  https://extensions.gnome.org/extension/7/removable-drive-menu/"
+echo "  https://extensions.gnome.org/extension/1166/extension-update-notifier/"
+echo "  https://extensions.gnome.org/extension/517/caffeine/"
 
 # ---------------------------------------------------------------------------
 
