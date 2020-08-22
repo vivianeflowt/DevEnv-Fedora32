@@ -147,3 +147,6 @@ wait
 # sudo dnf groupinstall "Gerenciadores de janelas"
 # sudo dnf groupinstall "Internet em modo gráfico"
 
+# Docker Portainer
+# docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer --admin-password='$2y$05$jDdeG0uUqGec0Rrhy9XT4.azZeGiDyFMB3bcgGl4eWWSoQK9M/J3.'
+# podman run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer --admin-password='$2y$05$jDdeG0uUqGec0Rrhy9XT4.azZeGiDyFMB3bcgGl4eWWSoQK9M/J3.'
