@@ -137,7 +137,9 @@ wait
 sudo snap install zoom-client
 wait
 
-
+# Desativar Gnome-Keyring : Exclua e Reboot
+# sudo rm /usr/lib64/pkcs11/gnome-keyring-pkcs11.so
+ 
 # VirtualBox
 # https://tecadmin.net/install-oracle-virtualbox-on-fedora/
 
