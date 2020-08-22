@@ -71,13 +71,22 @@ sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
 wait
 sudo dnf install nodejs
 wait
+sudo dnf install nodejs-sqlite3
+wait
+sudo dnf install nodejs-yarn
+wait
+sudo npm install -g browser-sync nodemon express mongoose grunt pm2 passport react pug ejs mysql mysql2 jslint webpack body-parser async dotenv mongodb nodemailer request socket.io uuid 
+wait
+
+# JSON Tools
+# https://geekflare.com/json-online-tools/
 
 # Sqlite
 sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
 wait
 sudo dnf install sqlite
 wait
-sudo dnf install sqlite-devel sqlite-tcl sqlite-doc sqlitebrowser
+sudo dnf install sqlite-devel sqlite-tcl sqlite-doc sqlitebrowser 
 wait
 
 # MySQL Workbench
