@@ -14,8 +14,10 @@ sudo dnf update --refresh | sudo dnf upgrade -y | sudo dnf autoremove -y
 wait
 
 # Basics
-sudo dnf install nano git wget curl tar gzip snapd flatpak 
+sudo dnf install nano git wget curl tar gzip snapd flatpak unzip p7zip p7zip-plugins unrar gparted
 wait
+# sudo ln -s /var/lib/snapd/snap /snap
+# wait
 git config --global user.email "vivianeflowt@gmail.com"
 wait
 git config --global user.name "vivianeflowt"
@@ -32,22 +34,96 @@ sudo dnf groupinstall "Development Tools"
 wait
 
 # Vlc
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
 sudo dnf install vlc
 wait
 
-# Install Chrome
+# VS Code
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+wait 
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+wait
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo dnf install code
+wait 
+
+# Chrome
 sudo dnf install fedora-workstation-repositories
 wait
 sudo dnf config-manager --set-enabled google-chrome
 wait
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
 sudo dnf install google-chrome-stable -y
 wait
 
+# Node.js
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo dnf install nodejs
+wait
+
+# Sqlite
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo dnf install sqlite
+wait
+sudo dnf install sqlite-devel sqlite-tcl sqlite-doc sqlitebrowser
+wait
+
+# MySQL Workbench
+wget https://dev.mysql.com/get/mysql80-community-release-fc32-1.noarch.rpm
+wait
+sudo rpm -Uvh mysql80-community-release-fc32-1.noarch.rpm
+wait
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo yum install mysql-workbench
+wait
+
+# PHP 7
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo dnf -y install php  php-cli php-fpm php-mysqlnd php-zip php-devel php-gd php-mcrypt php-mbstring php-curl php-xml php-pear php-bcmath php-json
+wait
+curl -sS https://getcomposer.org/installer | php
+wait
+sudo mv composer.phar /usr/local/bin/composer
+wait
+sudo chmod +x /usr/local/bin/composer
+wait
+
+# Python3
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo dnf install python3
+wait
+
+# .NET Sdk
+sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
+wait
+sudo dnf install dotnet-sdk-3.1
+wait
+
+# Mongodb Compass
+wget https://downloads.mongodb.com/compass/mongodb-compass-1.21.2.x86_64.rpm
+wait
+sudo yum install mongodb-compass-1.21.2.x86_64.rpm
+wait
+
+# Snaps
+sudo snap install heroku --classic 
+wait
+sudo snap install discord
+wait 
+sudo snap install zoom-client
+wait
 
 
-
-
-
+# VirtualBox
+# https://tecadmin.net/install-oracle-virtualbox-on-fedora/
 
 # Fedore Repositories Folder
 # cd /etc/yum.repos.d/
