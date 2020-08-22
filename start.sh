@@ -2,7 +2,7 @@
 
 clear
 sleep 0.5
-printf "Start...\n" & sleep 0.5 & Wait
+printf "Start...\n" & sleep 0.5 & wait
 echo " "
 
 # Set Default Hostname
