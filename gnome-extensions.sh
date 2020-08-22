@@ -55,6 +55,7 @@ echo "  https://extensions.gnome.org/extension/906/sound-output-device-chooser/"
 echo "  https://extensions.gnome.org/extension/7/removable-drive-menu/"
 echo "  https://extensions.gnome.org/extension/1166/extension-update-notifier/"
 echo "  https://extensions.gnome.org/extension/517/caffeine/"
+echo'"  https://extensions.gnome.org/extension/1128/hide-activities-button/"
 
 # ---------------------------------------------------------------------------
 
