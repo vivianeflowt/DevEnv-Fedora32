@@ -34,6 +34,12 @@ wait
 sudo dnf groupinstall "Development Tools"
 wait
 
+# Estação de Desenvolvimento Fedora
+# sudo dnf update --refresh | sudo dnf upgrade -y | sudo dnf autoremove -y
+# wait
+# sudo dnf groupinstall "Desenvolvimento e Estação de Trabalho Criativa" --skip-broken --bugfix --enhancement --best --security --with-optional
+# wait
+
 # Vlc
 sudo dnf update | sudo dnf upgrade -y | sudo dnf autoremove -y
 wait
@@ -128,3 +134,16 @@ wait
 
 # Fedore Repositories Folder
 # cd /etc/yum.repos.d/
+
+# List all dnf groups
+# sudo dnf group list
+# sudo dnf groupinstall "Administration Tools"
+# sudo dnf groupinstall "Ferramentas do sistema"
+# sudo dnf groupinstall "Gerenciamento de Contêiner."
+# sudo dnf groupinstall "Fedora Eclipse" --skip-broken
+# sudo dnf groupinstall "Gerenciamento por linha de comando"
+# sudo dnf groupinstall "Escritório/Produtividade"
+# sudo dnf groupinstall "Internet em modo texto"
+# sudo dnf groupinstall "Gerenciadores de janelas"
+# sudo dnf groupinstall "Internet em modo gráfico"
+
