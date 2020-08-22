@@ -6,6 +6,7 @@ sleep 1
 echo "Fedora 32 - Developer Environment"
 echo " "
 
+# Set Hostname
 sudo hostnamectl set-hostname "fedora"
 wait
 
